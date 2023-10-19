@@ -1,1 +1,2 @@
-# proiect-sincretic
+# PROIECT SINCRETIC
+### METODE AVNSATE DE PROGRAMARE
