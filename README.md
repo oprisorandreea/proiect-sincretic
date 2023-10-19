@@ -2,6 +2,7 @@
 ### METODE AVANSATE DE PROGRAMARE
 
 **Nume proiect: Circuit Cal in C**
+
 **Nume student: Oprisor Andreea-Agripina**
 
 **Descriere:**
