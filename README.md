@@ -14,20 +14,20 @@ Sursa*poza*tutorialepenet*
 ### REZOLVARE MATEMATICA:
 #### Algoritmul mereu va lua prima solutie, iar solutia va fi luata in oridinea acelor de ceasornic, conform imaginii de mai sus, fiindca asa am precizat in cod prin secventa de directii.
 
-![Algoritm](alg1)
+![Algoritm](alg1.jpg)
 
 #### Totul de aici se intampla in mod normal pana in pozitiile 19-23. In momentul in care se ocupa pozitia 23, se observa ca orice mutare pe care urmeaza sa o faca este indisponibila.
 
-![Algoritm](alg2)
+![Algoritm](alg2.jpg)
 
 #### Acest fapt duce la o intervenire de cod unde inducem faptul ca programul trebuie sa dea 3 mutari inapoi pentru a alege o alta pozitie pentru mutarea 20.
 
-![Algoritm](alg3)
+![Algoritm](alg3.jpg)
 
 #### Si tot asa se vor da inapoi mutarile in mai multe randuri de la pozitia in care se blocheaza, pentru a incerca alte posibilati favorabile conditiei de a nu ocupa aceesi pozitie de 2 ori.
 
 #### In momentul in care se ajunge la pozitia 25, ciclul se incheie si tabla este completa cu mutari nereptate, ajung altfel la solutia 41.
 
-![Algoritm](1)
-![Algoritm](2)
-![Algoritm](3)
+![Algoritm](1.jpg)
+![Algoritm](2.jpg)
+![Algoritm](3.jpg)
