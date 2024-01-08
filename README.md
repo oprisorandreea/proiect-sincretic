@@ -32,5 +32,5 @@ Sursa*poza*tutorialepenet*
 ![Algoritm](2.jpg)
 ![Algoritm](3.jpg)
 
-##### PENTRU PARTEA DE COD:
-## Avem doar 7 coordonate initiale care dau solutie pentru cazul in care calul sa ocupe toate pozitiile tablei si anume:(0,0),(1,0),(2,0),(0,1),(1,1),(2,2),(7,7). Restul sunt coordonate invalide care nu vor da solutie programului.
+## PENTRU PARTEA DE COD:
+##### Avem doar 7 coordonate initiale care dau solutie pentru cazul in care calul sa ocupe toate pozitiile tablei si anume:(0,0),(1,0),(2,0),(0,1),(1,1),(2,2),(7,7). Restul sunt coordonate invalide care nu vor da solutie programului.
