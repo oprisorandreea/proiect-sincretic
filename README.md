@@ -34,3 +34,6 @@ Sursa*poza*tutorialepenet*
 
 ## PENTRU PARTEA DE COD:
 ##### Avem doar 7 coordonate initiale care dau solutie pentru cazul in care calul sa ocupe toate pozitiile tablei si anume:(0,0),(1,0),(2,0),(0,1),(1,1),(2,2),(7,7). Restul sunt coordonate invalide care nu vor da solutie programului.
+
+## CODUL SURSA ACTUALIZAT:
+###### Codul functioneaza pentru dimensiunea tablei 8x8 si afiseaza doar o singura solutie pentru coordonatele initiale (0,0), deja introduse in cod.
