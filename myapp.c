@@ -3,7 +3,7 @@
 #define N 8
 
 int moveX[8] = { 2, 1, -1, -2, -2, -1, 1, 2 };
-int moveY[8] = { 1, 2, 2, 1, -1, -2, -2, -1 };
+int moveY[8] = { 1, 2, 2, 1, -1,-2, -2, -1 };
 
 int isSafe(int x, int y, int sol[N][N]) {
     return (x >= 0 && y >= 0 && x < N&& y < N&& sol[x][y] == -1);
