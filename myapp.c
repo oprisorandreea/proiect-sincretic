@@ -16,28 +16,27 @@ void printSolution(int sol[N][N]) {
         }
         printf("\n");
     }
+    printf("\n");
 }
 
 int solveKTUtil(int x, int y, int movei, int sol[N][N]) {
     if (movei == N * N) {
+        printSolution(sol);
         return 1; // Toate pozițiile au fost acoperite.
     }
 
+    int found = 0;
     for (int k = 0; k < 8; k++) {
         int next_x = x + moveX[k];
         int next_y = y + moveY[k];
         if (isSafe(next_x, next_y, sol)) {
             sol[next_x][next_y] = movei;
-            if (solveKTUtil(next_x, next_y, movei + 1, sol)) {
-                return 1;
-            }
-            else {
-                sol[next_x][next_y] = -1;
-            }
+            found = solveKTUtil(next_x, next_y, movei + 1, sol) || found;
+            sol[next_x][next_y] = -1;
         }
     }
 
-    return 0;
+    return found;
 }
 
 int solveKT(int x, int y) {
@@ -51,36 +50,21 @@ int solveKT(int x, int y) {
 
     sol[x][y] = 0; // Poziția de pornire a calului.
 
-    if (solveKTUtil(x, y, 1, sol)) {
-        printf("Solutia pentru coordonatele (%d, %d) este:\n", x, y);
-        printSolution(sol);
-        return 1;
-    }
-    else {
+    if (!solveKTUtil(x, y, 1, sol)) {
         printf("Nu există soluție pentru coordonatele (%d, %d).\n", x, y);
         return 0;
     }
+
+    return 1;
 }
 
 int main() {
-    int x, y;
+    int initialPositions[7][2] = { {0, 0}, {2, 0}, {0, 1}, {1, 1}, {2, 2}, {7, 7} };
 
-    while (1) {
-        printf("Introduceti coordonatele initiale ale calului (x și y) sau -1 pentru a iesi: ");
-        scanf("%d", &x);
-
-        if (x == -1) {
-            break; // Ieșirea din buclă dacă utilizatorul introduce -1.
+    for (int i = 0; i < 7; i++) {
+        if (!solveKT(initialPositions[i][0], initialPositions[i][1])) {
+            printf("Nu există soluție pentru coordonatele (%d, %d).\n", initialPositions[i][0], initialPositions[i][1]);
         }
-
-        scanf("%d", &y);
-
-        if (x < 0 || x >= N || y < 0 || y >= N) {
-            printf("Coordonatele introduse nu sunt valide.\n");
-            continue; // Continuarea buclei pentru a aștepta noi coordonate.
-        }
-
-        solveKT(x, y);
     }
 
     return 0;
