@@ -32,11 +32,20 @@ Sursa*poza*tutorialepenet*
 ![Algoritm](2.jpg)
 ![Algoritm](3.jpg)
 
+## Am inclus si aici partea de *Dockerfile*
+###### FROM gcc:latest
+###### WORKDIR /usr/src/myapp
+###### COPY myapp.c .
+###### RUN gcc -o myapp myapp.c 
+###### EXPOSE 80
+###### CMD ["./myapp"]
+
 ## PENTRU PARTEA DE COD:
 ##### Avem doar 7 coordonate initiale care dau solutie pentru cazul in care calul sa ocupe toate pozitiile tablei si anume:(0,0),(1,0),(2,0),(0,1),(1,1),(2,2),(7,7). Restul sunt coordonate invalide care nu vor da solutie programului.
 
-## CODUL SURSA ACTUALIZAT:
-###### Codul functioneaza pentru dimensiunea tablei 8x8 si afiseaza doar o singura solutie pentru coordonatele initiale (0,0), deja introduse in cod.
+### CODUL SURSA ACTUALIZAT:
+##### Codul functioneaza pentru dimensiunea tablei 8x8 si afiseaza doar o singura solutie pentru coordonatele initiale (0,0), deja introduse in cod.
+
 
 ### LINK CATRE REPOSITORY UL CREAT UNDE SE AFLA IMAGINEA PE DOCKER HUB:
 #### https://hub.docker.com/r/oprisorandreea21/andreeaoprisor
