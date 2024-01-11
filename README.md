@@ -37,3 +37,6 @@ Sursa*poza*tutorialepenet*
 
 ## CODUL SURSA ACTUALIZAT:
 ###### Codul functioneaza pentru dimensiunea tablei 8x8 si afiseaza doar o singura solutie pentru coordonatele initiale (0,0), deja introduse in cod.
+
+### LINK CATRE REPOSITORY UL CREAT UNDE SE AFLA IMAGINEA PE DOCKER HUB:
+#### https://hub.docker.com/r/oprisorandreea21/andreeaoprisor
